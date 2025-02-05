@@ -1,0 +1,18 @@
+programa {
+  funcao inicio() {
+  
+     inteiro tempo_minutos, disciplinas
+     inteiro tempo_disciplina
+     real tempo_livre 
+
+   tempo_minutos = 60 + 40  // 1 hora e 40 minutos = 100 minutos
+   disciplinas = 6
+
+   tempo_disciplina = tempo_minutos / disciplinas
+
+   tempo_livre = tempo_minutos - (tempo_disciplina * disciplinas)
+
+   escreva("Tempo dedicado para cada disciplina: ", tempo_disciplina, " minutos\n")
+   escreva("Tempo livre restante: ", tempo_livre, " minutos\n")
+  }
+}
