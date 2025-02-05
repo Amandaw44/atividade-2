@@ -1,0 +1,23 @@
+programa {
+  funcao inicio() {
+     inteiro area, preco_por_lata, latas_necessarias
+     real cobertura_por_litro, litros_por_lata
+     real total_litros, preco_total
+      cobertura_por_litro = 3  
+      litros_por_lata = 18   
+      preco_por_lata = 480    
+   escreva("Digite o tamanho da área a ser pintada em metros quadrados: ")
+   leia(area)
+   total_litros = area / cobertura_por_litro
+   latas_necessarias = total_litros / litros_por_lata
+   preco_total = latas_necessarias * preco_por_lata
+ 
+    se (area < 54){
+      latas_necessarias = 1
+      preco_total = 480
+     }
+     
+   escreva("Quantidade de latas de tinta necessárias: ", latas_necessarias, "\n")
+   escreva("Preço total: R$ ", preco_total, "\n")
+  }
+}
