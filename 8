@@ -1,0 +1,33 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		real tamanho_arquivo 
+		real velocidade_link
+		real tempo_download 
+
+		escreva("Digite o tamanho do arquivo (em MB): ")
+    			leia(tamanho_arquivo)
+    
+   
+   		 escreva("Digite a velocidade do link (em Mbps): ")
+  			  leia(velocidade_link)
+    
+    // 1 Mbps = 0.125 MBps
+    tempo_download = (tamanho_arquivo / (velocidade_link * 0.125)) / 60
+    
+   		 escreva("O tempo aproximado de download é: ", tempo_download , " minutos")
+	}
+}
+/* $$$ Portugol Studio $$$ 
+ * 
+ * Esta seção do arquivo guarda informações do Portugol Studio.
+ * Você pode apagá-la se estiver utilizando outro editor.
+ * 
+ * @POSICAO-CURSOR = 480; 
+ * @PONTOS-DE-PARADA = ;
+ * @SIMBOLOS-INSPECIONADOS = ;
+ * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
+ * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
+ */
