@@ -1,0 +1,16 @@
+programa {
+  funcao inicio() {
+
+     real segundos, segundos_ano_terrestre
+     inteiro anos_terrestres, anos_mercurio
+
+   segundos = 977000000  // 977 milhões de segundos
+   segundos_ano_terrestre = 60 * 60 * 24 * 365  // segundos em um ano terrestre
+   
+   anos_terrestres = segundos / segundos_ano_terrestre
+
+   anos_mercurio = anos_terrestres / (88 / 365)  // 88 dias terrestres em Mercúrio
+
+   escreva("Sua idade em Mercúrio é aproximadamente: ", anos_mercurio, " anos")
+  }
+}
